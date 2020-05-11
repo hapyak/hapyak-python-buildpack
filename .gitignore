@@ -12,3 +12,5 @@ builds/dockerenv.staging*
 builds/dockerenv.production
 
 test/scratch
+
+.idea
