@@ -10,6 +10,6 @@ ENV WORKSPACE_DIR="/app/builds" \
 RUN apt-get update && apt-get install --no-install-recommends -y python-pip-whl=9.0.1-2 python-pip=9.0.1-2 python-setuptools python-wheel libsqlite3-dev && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt /app/
-RUN pip install -r /app/requirements.txt --no-index --find-links /app/my_packages
+RUN pip install -r /app/requirements.txt --no-index --find-links /app/is/this/working/my_packages
 
 COPY . /app
